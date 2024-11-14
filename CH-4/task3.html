@@ -1,0 +1,62 @@
+<!-- write html and css script to design a sign up form having filds like username password choices of scores cricket hoccky badmintion and tabletemis include gender field sybmit and reset button follow below requriments 
+ first while hovering username and passowrd its background should turn yellow and pink color respectivley
+ second while clicking sports and gender field text should turn to red color 
+ both submit and reset button text should turn blue while hovering user apropriate selectors  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        input[type="text"]:hover
+        {
+            background-color: yellow;
+        }
+        input[type="password"]:hover
+        {
+            background-color: pink;
+        }
+        label:hover{
+            background-color: yellow;
+        }
+       label:active
+        {
+            color: red;
+            
+        }
+        input[type="submit"]:hover
+        {
+           color: blue;
+        }
+        input[type="reset"]:hover
+        {
+            color: blue;
+        }
+    </style>
+ </head>
+ <body>
+    <fieldset>
+        <legend align="center">Sign-Up Form</legend>
+        Username:<input type="text" id="user" placeholder="Enter Username">
+        <br>
+        <br>
+        Password:<input type="password" placeholder="Enter Password">
+        <br>
+        <br>
+        Choices Of Sportes: <label><input type="checkbox" name="cricket" id="">Cricket</label>
+                    <label for=""><input type="checkbox" name="hoccky" id="">Hoccky</label>
+                    <label for=""><input type="checkbox" name="badminton" id="">Badmintion</label>
+                    <label for=""><input type="checkbox" name="tabeltennis" id="">Table-Tennis</label>
+
+                    <br>
+                    <br>
+        Gender:<label for=""><input type="radio" value="Male" name="gender">Male</label>
+       <label for=""> <input type="radio" value="Female" name="gender">Female</label>
+        <br>
+        <br>
+        <input type="submit"/>
+        <input type="reset"/>
+    </fieldset>
+ </body>
+ </html>
