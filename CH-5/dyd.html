@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+            div {
+                animation-name: example;
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                border-radius: 0%;  /* Start as a square */
+                animation-duration: 16s; /* Total duration */
+                animation-timing-function: linear;
+                position: absolute;
+                animation-iteration-count: infinite;
+                animation-delay: 1s; /* Initial delay */
+            }
+
+            /* Keyframes with explicit pauses and smooth circle transition */
+            @keyframes example {
+                0% {
+                    top: 0px;
+                    left: 0px;
+                    background-color: red;
+                    border-radius: 0%; /* Square */
+                }
+                25% {
+                    top: 1000px;
+                    left: 1000px;
+                    background-color: blue;
+                    border-top-right-radius: 50%;  /* Round corners */
+                    border-bottom-left-radius: 50%;
+                }
+                50% {
+                    top: 1000px;
+                    left: 0px;
+                    background-color: lightblue;
+                    border-radius: 50%; /* Full circle */
+                    width: 300px;
+                    height: 300px;
+                }
+                75% {
+                    top: 0px;
+                    left: 1000px;
+                    background-color: lightgreen;
+                    border-radius: 50%; /* Full circle */
+                    width: 300px;
+                    height: 300px;
+                }
+                100% {
+                    top: 0px;
+                    left: 0px;
+                    background-color: red;
+                    border-radius: 0%; /* Back to square */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
