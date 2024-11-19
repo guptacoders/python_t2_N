@@ -1,0 +1,47 @@
+<!-- css gradients are 3 types
+ 1) Linear
+ 2) Radial
+ 3) Conic
+ 
+ 1]  Linear
+
+    default direction:top to bottom-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /* .grad1{
+                background-image: linear-gradient(to right,green,red,orange,yellow,blue,indigo,violet)
+            } */
+              
+            
+            /* .grad2{
+                 background-image: linear-gradient(to left,pink,red);
+            }
+            .grad3{
+                background-image: linear-gradient(to bottom right,pink,red);
+            } */
+            .grad{
+                background-image: radial-gradient(circle,red,yellow,green);
+                height: 300px;
+                width: 300px;
+            }
+            .grad1{
+                height: 200px;
+                width: 200px;
+                /* background-image: conic-gradient(red,green,blue); */
+                /* background-image: conic-gradient(red 45deg,yellow 90deg,green 210deg); */
+                /* background-image: conic-gradient(yellow 0deg  90deg,green 90deg 180deg,blue 180deg 270deg,red 270deg 360deg ); */
+                background-image: conic-gradient(27deg 90deg,pink,lightgreen);
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grad"></div>
+        <div class="grad1"></div>
+    </body>
+    </html>
