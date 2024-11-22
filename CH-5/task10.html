@@ -1,0 +1,51 @@
+<!-- write html and css script to design 1 table having 3 colums and 5 rows add rendom data while hovering it should be expanded around 50% horizontally bgcolor and font color will become red & white respectively.expansion should take place in 2sec -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            margin: 50px;
+        }
+       
+        td:hover{
+            transform: scaleX(1.5);
+            transform: rotate(180deg);
+            background-color: red;
+            color: white;
+            transition:  2s;
+        }
+    </style>
+ </head>
+ <body>
+    <table  border="5" rules="all" cellpadding="40px">
+        <tr>
+            <td>AN</td>
+            <td>BD</td>
+            <td>EG</td>
+        </tr>
+        <tr>
+            <td>RT</td>
+            <td>WR</td>
+            <td>DE</td>
+        </tr>
+        <tr>
+            <td>WS</td>
+            <td>DF</td>
+            <td>AW</td>
+        </tr>
+        <tr>
+            <td>SS</td>
+            <td>ER</td>
+            <td>UY</td>
+        </tr>
+        <tr>
+            <td>HG</td>
+            <td>UY</td>
+            <td>ER</td>
+        </tr>
+    </table>
+ </body>
+ </html>
